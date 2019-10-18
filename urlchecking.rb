@@ -76,7 +76,7 @@ Mail.deliver do
 end
 end
 if File.zero?("wrong.txt")
-break
+return
 else
 options = { :address              => "smtp.gmail.com",
             :port                 => 587,
